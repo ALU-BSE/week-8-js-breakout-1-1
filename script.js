@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
       { id: 2, title: "Tech Meetup", date: "2025-04-15", category: "Tech", description: "A networking event for tech enthusiasts.", image: "tech.jpg" },
       { id: 3, title: "Football Match", date: "2025-05-10", category: "Sports", description: "An exciting football match between top teams!", image: "football.jpg" },
       { id: 4, title: "Art Exhibition", date: "2025-06-05", category: "Art", description: "An inspiring exhibition featuring local artists.", image: "art.jpg" },
-      { id: 5, title: "Food Festival", date: "2025-07-12", category: "Food", description: "Taste delicious food from around the world!", image: "food.jpg" }
+      { id: 5, title: "Food Festival", date: "2025-07-12", category: "Food", description: "Taste delicious food from around the world!", image: "food.jpg" },
+      { id: 5, title: "Charity Event", date: "2025-07-14", category: "Community Outreach", description: "Come with us on a charity event to visit an orphanage center", image: "charity.jpg" },
+
   ];
 
   function getSearchParams() {

@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  background-color: #1d1e1f;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #0056b3, #0096ff);
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Card */
+.event-card {
+  background: white;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h4 {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.event-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.event-card a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.event-card a:hover {
+  text-decoration: underline;
+  color: #003c80;
+}
+
+/* Typography */
+.text-primary {
+  color: #0056b3 !important;
+}
+
+.text-muted {
+  color: #666 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Spacing */
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+/* Shadows */
+.shadow-lg {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #003c80;
+  border-color: #003c80;
+}
+
+.btn-outline-primary {
+  color: #0056b3;
+  border-color: #0056b3;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: white;
+}

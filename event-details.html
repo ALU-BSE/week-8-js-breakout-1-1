@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <img id="eventImage" class="card-img-top" alt="Event Image">
+            <h2 id="eventTitle" class="fw-bold text-center mt-3"></h2>
+            <p id="eventDate" class="text-muted text-center"></p>
+            <h5 class="text-primary text-center" id="eventCategory"></h5>
+            <p id="eventDescription" class="text-center"></p>
+        </div>
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-outline-primary">Back to Home</a>
+            <a href="events.html" class="btn btn-outline-primary">Back to Events</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const events = [
+                { id: 1, title: "Rock Concert", date: "2025-03-20", category: "Music", description: "An electrifying rock concert in the city!", image: "concert.jpg" },
+                { id: 2, title: "Tech Meetup", date: "2025-04-15", category: "Tech", description: "A networking event for tech enthusiasts.", image: "tech.jpg" },
+                { id: 3, title: "Football Match", date: "2025-05-10", category: "Sports", description: "An exciting football match between top teams!", image: "football.jpg" },
+                { id: 4, title: "Art Exhibition", date: "2025-06-05", category: "Art", description: "An inspiring exhibition featuring local artists.", image: "art.jpg" },
+                { id: 5, title: "Food Festival", date: "2025-07-12", category: "Food", description: "Taste delicious food from around the world!", image: "food.jpg" }
+            ];
+
+            function getEventDetails() {
+                const params = new URLSearchParams(window.location.search);
+                const eventId = params.get("id");
+                const event = events.find(e => e.id == eventId);
+
+                if (event) {
+                    document.getElementById("eventTitle").textContent = event.title;
+                    document.getElementById("eventDate").textContent = "Date: " + event.date;
+                    document.getElementById("eventCategory").textContent = "Category: " + event.category;
+                    document.getElementById("eventDescription").textContent = event.description;
+                    document.getElementById("eventImage").src = "images/" + event.image;
+                } else {
+                    document.querySelector(".card").innerHTML = `<h3 class="text-danger text-center">Event not found</h3>`;
+                }
+            }
+
+            getEventDetails();
+        });
+    </script>
+
+</body>
+</html>
